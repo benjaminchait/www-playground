@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"> <!-- content can also have ", initial-scale=1.0" -->
+
+  <title>Mapbox - Benjamin Chait</title>
+
+  <link rel="stylesheet" href="/assets/style.css"> 
+
+  <link rel="canonical" href="https://benjaminchait.net/mapbox.html">
+  <link rel="alternate" type="application/rss+xml" title="Benjamin Chait
+ RSS feed" href="/feed.xml">
+
+  <link rel="author" href="https://plus.google.com/112364401751366956186/posts"/>
+
+  <meta property="og:site_name" content="Benjamin Chait
+" >
+  <meta property="og:locale" content="en_US">
+
+  <meta property="og:title" content="Mapbox">
+  <meta property="og:type" content="article">
+
+
+  <meta property="og:url" content="https://benjaminchait.net/mapbox.html" >
+  <link rel="canonical" href="https://benjaminchait.net/mapbox.html">
+
+
+  <meta name="description" content="Personal site of Benjamin Chait.
+" >
+  <meta property="og:description" content="Personal site of Benjamin Chait.
+" >
+
+
+  <meta property="og:image" content="/assets/img/IMG_0534.jpeg" >
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/assets/img/favicon_io/site.webmanifest">
+
+  <script defer data-domain="benjaminchait.net" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+
+ <a class="muted small" href="/">Benjamin Chait
+</a>
+<h1>Mapbox</h1>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet" />
+
+<div id="map" style="width: 400px; height: 300px;"></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYmVuamFtaW5jaGFpdCIsImEiOiJjbDBtbjk4b28wZG04M21xMTBiZjk2Mmc0In0.fu809Tdjo0sidzb5O20Vlw';
+const map = new mapboxgl.Map({
+	container: 'map', // container ID
+	style: 'mapbox://styles/mapbox/streets-v11', // style URL
+	center: [-74.5, 40], // starting position [lng, lat]
+	zoom: 9 // starting zoom
+});
+</script>
+
+<div id="map_light" style="width: 640px; height: 320px;"></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYmVuamFtaW5jaGFpdCIsImEiOiJjbDBtbjk4b28wZG04M21xMTBiZjk2Mmc0In0.fu809Tdjo0sidzb5O20Vlw';
+const map_light = new mapboxgl.Map({
+	container: 'map_light', // container ID
+	style: 'mapbox://styles/mapbox/light-v10', // style URL
+	center: [-87.596532, 41.795068], // starting position [lng, lat]
+	zoom: 13 // starting zoom
+});
+</script>
+
+<div id="map_dark" style="width: 640px; height: 320px;"></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYmVuamFtaW5jaGFpdCIsImEiOiJjbDBtbjk4b28wZG04M21xMTBiZjk2Mmc0In0.fu809Tdjo0sidzb5O20Vlw';
+const map_dark = new mapboxgl.Map({
+	container: 'map_dark', // container ID
+	style: 'mapbox://styles/mapbox/dark-v10', // style URL
+	center: [-87.596532, 41.795068], // starting position [lng, lat]
+	zoom: 13 // starting zoom
+});
+</script>
+
+<div id="map_outdoors" style="width: 600px; height: 300px; margin: 20px;"></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYmVuamFtaW5jaGFpdCIsImEiOiJjbDBtbjk4b28wZG04M21xMTBiZjk2Mmc0In0.fu809Tdjo0sidzb5O20Vlw';
+const map_outdoors = new mapboxgl.Map({
+  container: 'map_outdoors', // container ID
+  style: 'mapbox://styles/mapbox/outdoors-v11', // style URL
+  center: [-87.596532, 41.795068], // starting position [lng, lat]
+  zoom: 13 // starting zoom
+});
+</script>
+
+
+<footer>
+  <p class="muted small"><a class="muted" href="/">Home</a> • <a class="muted" href="/about">About</a> • <a class="muted" href="/archives">Archives</a></p>
+</footer>
+
+</body>
+</html>
