@@ -23,8 +23,8 @@ const map = new mapboxgl.Map({
 mapboxgl.accessToken = 'pk.eyJ1IjoiYmVuamFtaW5jaGFpdCIsImEiOiJjbDBtbjk4b28wZG04M21xMTBiZjk2Mmc0In0.fu809Tdjo0sidzb5O20Vlw';
 const maptwo = new mapboxgl.Map({
 	container: 'maptwo', // container ID
-	style: 'mapbox://styles/mapbox/streets-v11', // style URL
+	style: 'mapbox://styles/mapbox/light-v10', // style URL
 	center: [-87.596532, 41.795068], // starting position [lng, lat]
-	zoom: 9 // starting zoom
+	zoom: 12 // starting zoom
 });
 </script>
