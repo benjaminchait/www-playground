@@ -23,8 +23,31 @@ const map = new mapboxgl.Map({
 mapboxgl.accessToken = 'pk.eyJ1IjoiYmVuamFtaW5jaGFpdCIsImEiOiJjbDBtbjk4b28wZG04M21xMTBiZjk2Mmc0In0.fu809Tdjo0sidzb5O20Vlw';
 const maptwo = new mapboxgl.Map({
 	container: 'maptwo', // container ID
-	style: 'mapbox://styles/mapbox/light-v10', // style URL
+	style: MAPBOX_STYLE_URL, // style URL
 	center: [-87.596532, 41.795068], // starting position [lng, lat]
 	zoom: 12 // starting zoom
 });
+
+let MAPBOX_STYLE_URL : String = {
+    if UITraitCollection.current.userInterfaceStyle == .dark {
+        return "mapbox://styles/mapbox/dark-v10" 
+    }
+    else {
+       return "mapbox://styles/mapbox/light-v10" 
+    }
+}()
+
+struct ContentView: View {
+
+    @Environment(\.colorScheme) var colorScheme
+
+    var mapboxStyleURL: String {
+        "mapbox://styles/custom" + (colorScheme == .dark ? "Dark" : "Light") + "ModeUrl" 
+    }
+
+    var body: some View {
+        Text(mapboxStyleURL)
+    }
+}
+
 </script>
