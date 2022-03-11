@@ -24,7 +24,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYmVuamFtaW5jaGFpdCIsImEiOiJjbDBtbjk4b28wZG04M
 const maptwo = new mapboxgl.Map({
 	container: 'maptwo', // container ID
 	style: 'mapbox://styles/mapbox/streets-v11', // style URL
-	center: [41.795068, -87.596532], // starting position [lng, lat]
+	center: [-87.596532, 41.795068], // starting position [lng, lat]
 	zoom: 9 // starting zoom
 });
 </script>
