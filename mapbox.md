@@ -26,7 +26,7 @@ const maptwo = new mapboxgl.Map({
 	style: MAPBOX_STYLE_URL, // style URL
 	center: [-87.596532, 41.795068], // starting position [lng, lat]
 	zoom: 12 // starting zoom
-});
+})
 
 let MAPBOX_STYLE_URL : String = {
     if UITraitCollection.current.userInterfaceStyle == .dark {
@@ -49,5 +49,4 @@ struct ContentView: View {
         Text(mapboxStyleURL)
     }
 }
-
 </script>
